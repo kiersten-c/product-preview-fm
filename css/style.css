@@ -1,0 +1,105 @@
+body {
+    background-color: hsl(30, 38%, 92%);
+    font-size: 14px;
+    color: #a9a9b3;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #ffffff;
+    width: 92%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 5% 2%;
+}
+
+img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.perfume {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    align-self: flex-start;
+    margin: 5px;
+    font-weight: 700;
+    font-size: .85em
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    color: #191c23;
+    font-size: 2em;
+    line-height: 1em;
+    margin: 5px;
+}
+
+p {
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5em;
+    margin: 5px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 5px;
+}
+
+.new-price {
+    color: #3d8168;
+    font-size: 2.5em;
+}
+
+.old-price {
+    text-decoration: line-through;
+    padding-left: 5px;
+    font-weight: 700;
+}
+
+button {
+    background-color: #3d8168;
+    color: #fefffd;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    min-width: 290px;
+    min-height: 45px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button img {
+    height: 15px;
+    width: auto;
+    margin: 0;
+    padding: 8px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

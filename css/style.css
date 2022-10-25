@@ -8,7 +8,7 @@ body {
     align-items: center;
 }
 
-.container {
+.whole {
     background-color: #ffffff;
     width: 92%;
     display: flex;
@@ -32,7 +32,7 @@ img {
     text-transform: uppercase;
     letter-spacing: 5px;
     align-self: flex-start;
-    margin: 5px;
+    margin: 15px 25px;
     font-weight: 700;
     font-size: .85em
 }
@@ -42,23 +42,21 @@ h1 {
     color: #191c23;
     font-size: 2em;
     line-height: 1em;
-    margin: 5px;
+    margin: 0 25px;
 }
 
 p {
     font-size: 1em;
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5em;
-    margin: 5px;
+    margin: 15px 25px;
 }
 
 .price {
     display: flex;
-    align-items: center;
-    display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin: 5px;
+    margin: 5px 0;
 }
 
 .new-price {
@@ -70,22 +68,32 @@ p {
     text-decoration: line-through;
     padding-left: 5px;
     font-weight: 700;
+    margin: 0;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 button {
     background-color: #3d8168;
     color: #fefffd;
-    margin: 10px;
     border-radius: 5px;
     border: none;
     font-family: 'Montserrat', sans-serif;
     font-size: 1em;
-    min-width: 290px;
-    min-height: 45px;
-    margin-bottom: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 5px;
+    width: 85%;
+    margin: 20px 0;
+}
+
+button:hover {
+    background-color: #1a4031;
 }
 
 button img {
@@ -102,4 +110,57 @@ button img {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 1200px) {    
+div.whole {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 50%;
+    margin-top: 15%;
+    
+}
+
+.main {
+    content: url("../images/image-product-desktop.jpg");
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    width: 50%;
+}
+
+.container .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+h1 {
+    margin: 5px 70px 25px 25px;
+}
+
+p {
+    margin: 20px 50px 40px 25px;
+
+}
+
+.perfume {
+    margin: 0 25px 30px 25px;
+}
+
+.price {
+    align-self: start;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.new-price {
+    margin: 0 15px 0 25px;
+}
+
+.old-price {
+    margin: 0;
+}
 }
